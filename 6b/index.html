@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="http://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css" rel="stylesheet">
+	
+<head>
+	<title>POS App</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<!--===============================================================================================-->
+
+</head>
+<body>
+	<div class="input-group">
+	<img src="images/logo.png" style="width:100px;height:45px;margin-right:20px;margin-left:15px" alt="Arcademy">
+    <input type="text" class="form-control" placeholder="Search...">
+    <span class="input-group-btn">
+        <button class="btn btn-default" type="button" style="margin-right:20px;" aria-label="Search" >
+            <i class="mdi mdi-magnify" aria-hidden="true"></i>
+        </button>
+		<button type="button" class="btn btn-primary" style="margin-right:20px;" data-toggle="modal" data-target="#myModal2">
+			ADD
+		</button>
+    </span>
+	</div>
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100">
+					<table>
+						<thead>
+							<tr class="table100-head">
+								<th class="column1">No</th>
+								<th class="column2">Cashier</th>
+								<th class="column3">Product</th>
+								<th class="column4">Category</th>
+								<th class="column5">Price</th>
+								<th class="column6">Action</th>
+							</tr>
+						</thead>
+						<tbody>
+								<tr>
+									<td class="column1">1</td>
+									<td class="column2">Pevita Pearce</td>
+									<td class="column3">Latte</td>
+									<td class="column4">Drink</td>
+									<td class="column5">Rp. 10.000</td>
+									<td class="column6">
+										<i class="fas fa-edit fs-25 m-r-6 text-success" data-toggle="modal" data-target="#myModal"></i>
+										<i class="fas fa-trash-alt fs-25 m-r-6 text-danger" data-toggle="modal" data-target="#myModal3"></i>
+									</td>
+								</tr>
+								<tr>
+									<td class="column1">2</td>
+									<td class="column2">Raisa Andriana</td>
+									<td class="column3">Cake</td>
+									<td class="column4">Food</td>
+									<td class="column5">Rp. 15.000</td>
+									<td class="column6">
+										<i class="fas fa-edit fs-25 m-r-6 text-success"></i>
+										<i class="fas fa-trash-alt fs-25 m-r-6 text-danger"></i>
+									</td>
+								</tr>
+								<tr>
+									<td class="column1">3</td>
+									<td class="column2">Raisa Andriana</td>
+									<td class="column3">Fried Rice</td>
+									<td class="column4">Food</td>
+									<td class="column5">Rp. 30.000</td>
+									<td class="column6">
+										<i class="fas fa-edit fs-25 m-r-6 text-success"></i>
+										<i class="fas fa-trash-alt fs-25 m-r-6 text-danger"></i>
+									</td>
+								</tr>
+								<tr>
+									<td class="column1">4</td>
+									<td class="column2">Pevita Pearce</td>
+									<td class="column3">Gudeg</td>
+									<td class="column4">Food</td>
+									<td class="column5">Rp. 35.000</td>
+									<td class="column6">
+										<i class="fas fa-edit fs-25 m-r-6 text-success"></i>
+										<i class="fas fa-trash-alt fs-25 m-r-6 text-danger"></i>
+									</td>
+								</tr>
+								<tr>
+									<td class="column1">5</td>
+									<td class="column2">Joko Purwandhi</td>
+									<td class="column3">Ice Tea</td>
+									<td class="column4">Drink</td>
+									<td class="column5">Rp. 55.000</td>
+									<td class="column6">
+										<i class="fas fa-edit fs-25 m-r-6 text-success"></i>
+										<i class="fas fa-trash-alt fs-25 m-r-6 text-danger"></i>
+									</td>
+								</tr>
+								<tr>
+									<td class="column1">6</td>
+									<td class="column2">Roihan Auliya Ulfattah</td>
+									<td class="column3">Chicken Noodle</td>
+									<td class="column4">Food</td>
+									<td class="column5">Rp. 15.000</td>
+									<td class="column6">
+										<i class="fas fa-edit fs-25 m-r-6 text-success"></i>
+										<i class="fas fa-trash-alt fs-25 m-r-6 text-danger"></i>
+									</td>
+								</tr>							
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- The Modal -->
+	<div class="modal" id="myModal">
+	  <div class="modal-dialog" style="width:1000px;">
+		<div class="modal-content">
+
+		  <!-- Modal Header -->
+		  <div class="modal-header">
+			<h4 class="modal-title">EDIT</h4>
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+		  </div>
+
+		  <!-- Modal body -->
+		  <div class="modal-body">
+				<!-- input -->
+				<div class="md-form form-lg">
+				  <input type="text" id="input1" class="form-control form-control-lg">
+				  <label for="input1">Raisa Andriana</label>
+				</div>
+				<div class="md-form form-lg">
+				  <input type="text" id="input2" class="form-control form-control-lg">
+				  <label for="input2">Drink</label>
+				</div>
+				<div class="md-form form-lg">
+				  <input type="text" id="input3" class="form-control form-control-lg">
+				  <label for="input3">Ice Tea</label>
+				</div>
+				<div class="md-form form-lg">
+				  <input type="text" id="input4" class="form-control form-control-lg">
+				  <label for="input4">Rp. 10.000</label>
+				</div>
+		  </div>
+
+		  <!-- Modal footer -->
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-warning" data-dismiss="modal">EDIT</button>
+		  </div>
+
+		</div>
+	  </div>
+	</div>
+	
+	<!-- The Modal -->
+	<div class="modal" id="myModal2">
+	  <div class="modal-dialog" style="width:1000px;">
+		<div class="modal-content">
+
+		  <!-- Modal Header -->
+		  <div class="modal-header">
+			<h4 class="modal-title">ADD</h4>
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+		  </div>
+
+		  <!-- Modal body -->
+		  <div class="modal-body">
+				<!-- input -->
+				<div class="md-form form-lg">
+				  <input type="text" id="input1" class="form-control form-control-lg">
+				  <label for="input1">Raisa Andriana</label>
+				</div>
+				<div class="md-form form-lg">
+				  <input type="text" id="input2" class="form-control form-control-lg">
+				  <label for="input2">Drink</label>
+				</div>
+				<div class="md-form form-lg">
+				  <input type="text" id="input3" class="form-control form-control-lg">
+				  <label for="input3">Ice Tea</label>
+				</div>
+				<div class="md-form form-lg">
+				  <input type="text" id="input4" class="form-control form-control-lg">
+				  <label for="input4">Rp. 10.000</label>
+				</div>
+		  </div>
+
+		  <!-- Modal footer -->
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-warning" data-dismiss="modal">ADD</button>
+		  </div>
+
+		</div>
+	  </div>
+	</div>
+	
+	<!-- The Modal -->
+	<div class="modal" id="myModal3">
+	  <div class="modal-dialog" style="width:1000px;">
+		<div class="modal-content">
+
+		  <!-- Modal body -->
+		  <div class="modal-body" style="align:center;">
+			<text>Data Raisa Andriana ID </text><text style="color:yellow">#1</text><h1>
+			<i class="far fa-check-circle fa-7x text-success"></i>	
+			<h4 class="modal-title">Berhasil Dihapus!</h4>
+		  </div>
+
+		  <!-- Modal footer -->
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		  </div>
+
+		</div>
+	  </div>
+	</div>
+
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
